@@ -32,4 +32,14 @@ h2 {
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+    flex-wrap: wrap;
+}
+.contactContainer > article {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    background-color: aliceblue;
 }

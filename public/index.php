@@ -22,10 +22,11 @@
 
             $_SESSION['contacts'][] = $newContact;
 
-            $contacts = $_SESSION['contacts'];
 
         }
     }
+    $contacts = $_SESSION['contacts'];
+
 ?>
 
 <!DOCTYPE html>
@@ -74,6 +75,7 @@
                         }
                         
                     }else{
+                        var_dump($_SESSION['contacts']);
                         echo "
                             <p>
                                 Nous n'avons pas reçu de messages!
