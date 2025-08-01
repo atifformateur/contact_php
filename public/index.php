@@ -1,6 +1,10 @@
 <?php
 
-session_start();
+    session_start();
+    //session_destroy();
+    if (!isset($_SESSION["contacts"])) {
+       $_SESSION["contacts"] = [];
+    }
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
@@ -14,6 +18,11 @@ session_start();
                 "email" => $email,
                 "message" => $message
             ];
+
+            //nettoyer les données
+            
+            //enregistrer les données (dans cet exemple c'est dans la session en attendant de voir la bdd)
+
         }
     }
 ?>
